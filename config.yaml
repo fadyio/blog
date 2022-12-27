@@ -14,7 +14,7 @@ minify:
 ##################################################################
 params:
   env: production
-  label:
+  assets:
     favicon: /icon/favicon-32x32.png
     favicon16x16: /icon/favicon-16x16.png
     favicon32x32: /icon/favicon-32x32.png

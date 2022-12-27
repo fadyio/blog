@@ -1,41 +1,79 @@
 baseURL: "https://Fadyio.com"
 languageCode: en-us
 title: Fady Nagh
-paginate: 5
+paginate: 7
 theme: "Blog"
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
-buildExpired: false
 enableEmoji: true
-minify:
-  disableXML: true
-  minifyOutput: true
+##################################################################
 params:
-  TocSide: 'right' # or 'right'
-  description: "Fady Nagh's Blog"
-  keywords: [DevOps, Blog, Golan, AWS, docker, kubernetes, Ansible]
-  author: Fady
-  defaultTheme: auto # dark, light
-  EnableInstantClick: true
   env: production
+  homeInfoParams:
+    Title: Hi there wave
+    Content: Can be Info, links, about...
+  socialIcons:
+    - name: github
+      url: https://github.com/Fadyio
+    - name: linkedin
+      url: https://www.linkedin.com/in/Fadyio
+    - name: reddit
+      url: https://www.reddit.com/r/Fady000/
+    - name: youtube
+      url: https://www.youtube.com/@Fadyio
+    - name: twitter
+      url: https://twitter.com/Fady_io
+    - name: email
+      url: mailto:Fady@Fadyio.com
+    - name: rss
+      url: https://Fadyio.com/index.xml
+  TocSide: "right"
+  TocOpen: false
+  author: Fady
+  description: "Fady Nagh's Blog"
+  minify:
+    disableXML: true
+    minifyOutput: true
+  keywords: [DevOps, Blog, Golan, AWS, docker, kubernetes, Ansible]
+  defaultTheme: auto
+  ShowPostNavLinks: true
+  EnableInstantClick: true
   googleAnalytics: G-1ZN2JNL2H3
   DateFormat: "2006-01-02"
-  ShowReadingTime: true
   ShowShareButtons: true
-  ShareButtons: ["linkedin", "twitter"]
+  ShowReadingTime: true
+  ShareButtons: ["linkedin", "twitter", "reddit", "facebook", "whatsapp", "telegram", "ycombinator"]
   ShowWordCount: true
-socialIcons:
-  - name: twitter
-    url: "https://twitter.com/fady_io"
-  - name: stackoverflow
-    url: "https://stackoverflow.com"
-  - name: github
-    url: "https://github.com/fadyio"
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: false
+  ShowRssButtonInSectionTermList: true
+  comments: true
+  editPost:
+    URL: "https://github.com/Fadyio.com/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title"]
+  assets:
+    favicon: "/icon/favicon.ico"
+    favicon16x16: "/icon/favicon-16x16.png"
+    favicon32x32: "/icon/favicon-32x32.png"
+    apple_touch_icon: "/icon/apple-touch-icon.png"
+    safari_pinned_tab: "/favicon/mstile-144x144.png"
 menu:
   main:
     - name: Blog
       url: /posts/
+      weight: 1
+    - name: About
+      url: about
       weight: 1
     - name: Tags
       url: /tags/
@@ -43,3 +81,11 @@ menu:
     - name: Archive
       url: /archives/
       weight: 5
+    - name: Search
+      url: /search/
+      weight: 5
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary

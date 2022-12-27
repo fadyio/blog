@@ -27,11 +27,11 @@ params:
   ShowWordCount: true
 socialIcons:
   - name: twitter
-    url: "https://twitter.com/"
+    url: "https://twitter.com/fady_io"
   - name: stackoverflow
     url: "https://stackoverflow.com"
   - name: github
-    url: "https://github.com/"
+    url: "https://github.com/fadyio"
 menu:
   main:
     - name: Blog

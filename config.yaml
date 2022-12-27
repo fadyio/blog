@@ -1,5 +1,6 @@
 baseURL: "https://Fadyio.com"
 languageCode: en-us
+DefaultContentLanguage: en
 title: Fady Nagh
 paginate: 7
 theme: "Blog"
@@ -7,9 +8,18 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 enableEmoji: true
+minify:
+  disableXML: true
+  minifyOutput: true
 ##################################################################
 params:
   env: production
+  label:
+    favicon: /icon/favicon-32x32.png
+    favicon16x16: /icon/favicon-16x16.png
+    favicon32x32: /icon/favicon-32x32.png
+    apple_touch_icon: /icon/apple-touch-icon.png
+    safari_pinned_tab: icon/mstile-144x144.png
   homeInfoParams:
     Title: Hi there wave
     Content: Can be Info, links, about...
@@ -32,9 +42,9 @@ params:
   TocOpen: false
   author: Fady
   description: "Fady Nagh's Blog"
-  minify:
-    disableXML: true
-    minifyOutput: true
+  mainSections:
+    - post
+    - posts
   keywords: [DevOps, Blog, Golan, AWS, docker, kubernetes, Ansible]
   defaultTheme: auto
   ShowPostNavLinks: true
@@ -49,10 +59,6 @@ params:
   ShowBreadCrumbs: false
   ShowRssButtonInSectionTermList: true
   comments: true
-  editPost:
-    URL: "https://github.com/Fadyio.com/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -61,12 +67,6 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title"]
-  assets:
-    favicon: "/icon/favicon.ico"
-    favicon16x16: "/icon/favicon-16x16.png"
-    favicon32x32: "/icon/favicon-32x32.png"
-    apple_touch_icon: "/icon/apple-touch-icon.png"
-    safari_pinned_tab: "/favicon/mstile-144x144.png"
 menu:
   main:
     - name: Blog

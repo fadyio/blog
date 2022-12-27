@@ -1,0 +1,15 @@
+languageCode: en-us
+title: Fady Nagh
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+theme: "Blog"
+
+googleAnalytics: 
+
+params:
+  TocSide: 'left'  # or 'right'
+  EnableInstantClick: true
+  env: production
+

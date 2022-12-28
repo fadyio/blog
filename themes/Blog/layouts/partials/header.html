@@ -98,6 +98,27 @@ function toggleThemeListener() {
                 {{- $label_text -}}
             </a>
             {{- end }}
+        </div>
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absURL }}
+            {{- $page_url:= $currentPage.Permalink }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ $menu_item_url }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- if $is_search -}}data-no-instant{{- end -}}
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
+                {{- if strings.HasPrefix $page_url $menu_item_url }} class="active" {{- end }}
+                {{- if .Params.External }} target="_blank" {{- end }}
+                >
+                    {{- .Pre }}
+                    {{- .Name -}}
+                    {{ .Post -}}
+                    {{- if .Params.External }}<span class="external-link">{{ safeHTML (index $.Site.Data.svg "external-link") }}</span>{{- end }}
+                </a>
+            </li>
+            {{- end }}
             <span class="logo-switches">
                 {{- if (not site.Params.disableThemeToggle) }}
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -122,27 +143,6 @@ function toggleThemeListener() {
                 </button>
                 {{- end }}
             </span>
-        </div>
-        {{- $currentPage := . }}
-        <ul id="menu">
-            {{- range site.Menus.main }}
-            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL)) | absURL }}
-            {{- $page_url:= $currentPage.Permalink }}
-            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
-            <li>
-                <a href="{{ $menu_item_url }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- if $is_search -}}data-no-instant{{- end -}}
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
-                {{- if strings.HasPrefix $page_url $menu_item_url }} class="active" {{- end }}
-                {{- if .Params.External }} target="_blank" {{- end }}
-                >
-                    {{- .Pre }}
-                    {{- .Name -}}
-                    {{ .Post -}}
-                    {{- if .Params.External }}<span class="external-link">{{ safeHTML (index $.Site.Data.svg "external-link") }}</span>{{- end }}
-                </a>
-            </li>
-            {{- end }}
         </ul>
     </nav>
 </header>

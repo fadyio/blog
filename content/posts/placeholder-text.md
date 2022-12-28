@@ -8,6 +8,10 @@ tags:
 hideMeta: true
 searchHidden: true
 ShowBreadCrumbs: false
+cover:
+    image: /img/0004.jpg
+    caption: " thsit" # display caption under cover
+    relative: true # when using page bundles set this to true
 ---
 
 Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.

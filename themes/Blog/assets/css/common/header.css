@@ -27,8 +27,8 @@
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 600;
 }
 
 .logo a img,
@@ -43,12 +43,12 @@
 }
 
 #theme-toggle svg {
-    height: 18px;
+    height: 25px;
 }
 
 button#theme-toggle {
-    font-size: 26px;
-    margin: auto 4px;
+    font-size: 50px;
+    margin: auto 6px;
 }
 
 body.dark #moon {
@@ -72,7 +72,7 @@ body:not(.dark) #sun {
 }
 
 #menu a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: var(--secondary);
     display: inline-block;

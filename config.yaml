@@ -1,13 +1,18 @@
 baseURL: "https://Fadyio.com"
 languageCode: en-us
 DefaultContentLanguage: en
-title: Fady Nagh
-paginate: 7
+paginate: 5
 theme: "Blog"
+title: Fady Nagh
+copyright: "© 2022 Fady Nagh"
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
+enableInlineShortcodes: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+pygmentsCodeFences: true
 enableEmoji: true
+paginatePath: "page"
+googleAnalytics: "G-1ZN2JNL2H3"
 minify:
   disableXML: true
   minifyOutput: true
@@ -15,23 +20,20 @@ minify:
 params:
   env: production
   assets:
+    disableHLJS: true
     favicon: favicon.ico
     favicon16x16: favicon-16x16.png
     favicon32x32: favicon-32x32.png
     apple_touch_icon: apple-touch-icon.png
     safari_pinned_tab: mstile-144x144.png
   homeInfoParams:
-    Title: Hi there wave
-    Content: Can be Info, links, about...
+    Title: "Hi there \U0001F44B\U0001F3FB"
+    Content: "Welcome to the website of Fady Nagh. Views and typos are my own."
   socialIcons:
     - name: github
       url: https://github.com/Fadyio
     - name: linkedin
       url: https://www.linkedin.com/in/Fadyio
-    - name: reddit
-      url: https://www.reddit.com/r/Fady000/
-    - name: youtube
-      url: https://www.youtube.com/@Fadyio
     - name: twitter
       url: https://twitter.com/Fady_io
     - name: stackoverflow
@@ -40,25 +42,27 @@ params:
       url: mailto:Fady@Fadyio.com
     - name: rss
       url: https://Fadyio.com/index.xml
-  TocSide: "right"
-  TocOpen: false
-  author: Fady
-  description: "Fady Nagh's Blog"
+  author: "Fady Nagh"
+  description: "Personal & opinionated website of Fady Nagh"
   mainSections:
     - post
     - posts
   keywords: [DevOps, Blog, Golan, AWS, docker, kubernetes, Ansible]
-  defaultTheme: auto
+  defaultTheme: dark
+  disableThemeToggle: true
   ShowPostNavLinks: true
   EnableInstantClick: true
-  googleAnalytics: G-1ZN2JNL2H3
   DateFormat: "2006-01-02"
   ShowShareButtons: true
+  disableAnchoredHeadings: true
   ShowReadingTime: true
-  ShareButtons: ["linkedin", "twitter", "reddit", "facebook", "whatsapp", "telegram", "ycombinator"]
+  ShareButtons: ["linkedin", "twitter"]
   ShowWordCount: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: false
+  TocSide: "right"
+  TocOpen: false
+  disableScrollToTop: true
   ShowRssButtonInSectionTermList: true
   comments: true
   fuseOpts:
@@ -68,13 +72,32 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    keys: ["title"]
-pygmentsUseClasses: true
+    keys: ["title", "permalink", "summary", "content"]
+  privacy:
+    disqus:
+      disable: true
+    googleAnalytics:
+      disable: true
+    instagram:
+      disable: false
+      simple: true
+    twitter:
+      disable: false
+      enableDNT: false
+      simple: true
+    vimeo:
+      disable: false
+      simple: true
+    youtube:
+      disable: false
+      privacyEnhanced: true
 markup:
   highlight:
     codeFences: true
     guessSyntax: true
-    lineNos: true
+    noClasses: false
+    lineNos: false
+    style: dracula
 menu:
   main:
     - name: Blog

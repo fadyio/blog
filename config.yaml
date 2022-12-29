@@ -2,16 +2,13 @@ baseURL: "https://Fadyio.com"
 languageCode: en-us
 DefaultContentLanguage: en
 paginate: 5
-theme: "Blog"
 title: Fady Nagh
 copyright: "© 2022 Fady Nagh"
 enableRobotsTXT: true
+theme: ["hugo-notice"]
 enableInlineShortcodes: true
 pygmentsCodefencesGuessSyntax: true
-pygmentsUseClasses: true
-pygmentsCodeFences: true
 enableEmoji: true
-paginatePath: "page"
 googleAnalytics: "G-1ZN2JNL2H3"
 minify:
   disableXML: true
@@ -21,11 +18,11 @@ params:
   env: production
   assets:
     disableHLJS: true
-    favicon: favicon.ico
-    favicon16x16: favicon-16x16.png
-    favicon32x32: favicon-32x32.png
-    apple_touch_icon: apple-touch-icon.png
-    safari_pinned_tab: mstile-144x144.png
+    favicon: /favicon/favicon.ico
+    favicon16x16: /favicon/favicon-16x16.png
+    favicon32x32: /favicon/favicon-32x32.png
+    apple_touch_icon: /favicon/apple-touch-icon.png
+    safari_pinned_tab: /favicon/mstile-144x144.png
   homeInfoParams:
     Title: "Hi there \U0001F44B\U0001F3FB"
     Content: "Welcome to the website of Fady Nagh. Views and typos are my own."
@@ -51,20 +48,16 @@ params:
   defaultTheme: dark
   disableThemeToggle: true
   ShowPostNavLinks: true
-  EnableInstantClick: true
   DateFormat: "2006-01-02"
   ShowShareButtons: true
   disableAnchoredHeadings: true
   ShowReadingTime: true
-  ShareButtons: ["linkedin", "twitter"]
   ShowWordCount: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: false
-  TocSide: "right"
   TocOpen: false
   disableScrollToTop: true
   ShowRssButtonInSectionTermList: true
-  comments: true
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -106,15 +99,19 @@ menu:
     - name: About
       url: about
       weight: 1
-    - name: Tags
-      url: /tags/
+    - name: Projects
+      url: projects
+      weight: 3
+    - identifier: categories
+      name: Series
+      url: /categories/
       weight: 4
-    - name: Archive
-      url: /archives/
+    - name: Contact
+      url: /contact/
       weight: 5
-    - name: Search
+    - post: <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-search" width="25" height="25" viewBox="0 0 24 20" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <circle cx="15" cy="15" r="4" /> <path d="M18.5 18.5l2.5 2.5" /> <path d="M4 6h16" /> <path d="M4 12h4" /> <path d="M4 18h4" /> </svg>
       url: /search/
-      weight: 5
+      weight: 6
 outputs:
   home:
     - HTML

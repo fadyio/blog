@@ -34,6 +34,21 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ###### H6
 
+{{< notice note >}}
+There's so much that could go wrong with this. I should remind everyone that this is for fun and NOT production. Upgrades could conflict, packages could break dependencies, releases could be tainted, etc.
+{{< /notice >}}
+
+
+{{< notice tip >}}
+The following commands are tested on Ubuntu 20.04 only.
+{{< /notice >}}
+
+{{< notice warning >}}
+This is a warning notice. Be warned!
+{{< /notice >}}
+
+
+
 ## Paragraph
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.

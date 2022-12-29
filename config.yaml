@@ -48,7 +48,6 @@ params:
   author: "Fady Nagh"
   description: "Personal & opinionated website of Fady Nagh"
   comments: true
-  DisqusShortname: fadyio
   mainSections:
     - post
     - posts

@@ -47,8 +47,8 @@ params:
       url: https://Fadyio.com/index.xml
   author: "Fady Nagh"
   description: "Personal & opinionated website of Fady Nagh"
-  disqusShortname: fadyio
   comments: true
+  DisqusShortname: fadyio
   mainSections:
     - post
     - posts

@@ -2,7 +2,7 @@ baseURL: "https://Fadyio.com"
 languageCode: en-us
 theme: ["hugo-notice"]
 paginate: 5
-title: "Fady Nagh | Fadyio.com"
+title: "Fady Nagh"
 copyright: "© 2022  Fady Nagh"
 enableRobotsTXT: true
 buildDrafts: false
@@ -24,11 +24,16 @@ params:
   env: production
   assets:
     disableHLJS: true
+    disableFingerprinting: false
     favicon: /favicon/favicon.ico
     favicon16x16: /favicon/favicon-16x16.png
     favicon32x32: /favicon/favicon-32x32.png
     apple_touch_icon: /favicon/apple-touch-icon.png
     safari_pinned_tab: /favicon/mstile-144x144.png
+  images:
+    - /img/social.jpg # This is the root pic when sharing on social media
+  label:
+    text: Fadyio.com # sets the top left blue "home" link text
   homeInfoParams:
     Title: "Hi there \U0001F44B\U0001F3FB"
     Content: "Welcome to the website of Fady Nagh. Views and typos are my own."
@@ -46,14 +51,15 @@ params:
     - name: rss
       url: https://Fadyio.com/index.xml
   author: "Fady Nagh"
-  description: "Personal & opinionated website of Fady Nagh"
+  description: "A collection of walkthroughs, rants, and hacks on emerging cloud technologies and DevOps methodology and tools."
   comments: true
   mainSections:
     - post
     - posts
-  keywords: [DevOps, Blog, Golan, AWS, docker, kubernetes, Ansible]
-  defaultTheme: dark
-  disableThemeToggle: true
+  keywords: [DevOps, Fady Nagh, Cloud, Linux, tech, Blog, Golan, AWS, docker, kubernetes, Ansible]
+  defaultTheme: auto
+  ShowBreadCrumbs: true
+  disableThemeToggle: false
   ShowPostNavLinks: true
   DateFormat: "2006-01-02"
   ShowShareButtons: true
@@ -61,18 +67,23 @@ params:
   ShowReadingTime: true
   ShowWordCount: true
   ShowCodeCopyButtons: true
-  ShowBreadCrumbs: false
   TocOpen: false
   disableScrollToTop: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+    responsiveImages: true
+  schema:
+    publisherType: Website
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
     location: 0
     distance: 1000
     threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+    minMatchCharLength: 2
+    keys: ["title", "content"]
   privacy:
     disqus:
       disable: true
@@ -123,4 +134,4 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # is necessary
+    - JSON # is necessary for search to work

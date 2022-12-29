@@ -1,15 +1,21 @@
 baseURL: "https://Fadyio.com"
 languageCode: en-us
-DefaultContentLanguage: en
-paginate: 5
-title: Fady Nagh
-copyright: "© 2022 Fady Nagh"
-enableRobotsTXT: true
 theme: ["hugo-notice"]
-enableInlineShortcodes: true
-pygmentsCodefencesGuessSyntax: true
+paginate: 5
+title: "Fady Nagh | Fadyio.com"
+copyright: "© 2022  Fady Nagh"
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 enableEmoji: true
+pygmentsUseClasses: true
+pygmentsCodefencesGuessSyntax: true
 googleAnalytics: "G-1ZN2JNL2H3"
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors:
+  - error-remote-getjson
 minify:
   disableXML: true
   minifyOutput: true
@@ -41,6 +47,8 @@ params:
       url: https://Fadyio.com/index.xml
   author: "Fady Nagh"
   description: "Personal & opinionated website of Fady Nagh"
+  comments: true
+  disqusShortname: Fadyio
   mainSections:
     - post
     - posts

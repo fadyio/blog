@@ -6,7 +6,6 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Hugo](https://img.shields.io/badge/Hugo-FF4088?style=for-the-badge&logo=hugo&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-[![GitHub License](https://img.shields.io/github/license/Fadyio/Fadyio.com)](https://github.com/Fadyio/fadyio.com/blob/master/LICENSE)
 
 </div>
 

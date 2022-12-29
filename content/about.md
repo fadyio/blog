@@ -1,9 +1,19 @@
 ---
-title: "about"
+title: "About"
 date: 2022-08-24T09:48:33+02:00
-draft: true
+draft: false
+url: "/about/"
+summary: about
+hidemeta : true
+comments : false
 ShowReadingTime: false
-hidemeta: true
+ShowToc: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowCodeCopyButtons: false
+disableShare: true
+
 ---
 
-# congratulations! :tada:
+ddfa
+---

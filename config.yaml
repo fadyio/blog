@@ -1,6 +1,6 @@
 baseURL: "https://Fadyio.com"
 languageCode: en-us
-theme: ["hugo-notice"]
+theme: hugo-notice
 paginate: 5
 title: "Fady Nagh"
 copyright: "© 2022  Fady Nagh"

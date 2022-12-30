@@ -8,6 +8,7 @@ tags:
   - syntax
   - example
 ShowToc: true
+categories: ["AWS"]
 cover:
     image: /img/0004.jpg
     caption: " thsit" # display caption under cover

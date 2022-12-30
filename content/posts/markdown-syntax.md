@@ -16,6 +16,10 @@ cover:
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 
+{{< notice tip >}}
+The following commands are tested on Ubuntu 20.04 only.
+{{< /notice >}}
+
 <!--more-->
 
 ## Headings
@@ -39,9 +43,6 @@ There's so much that could go wrong with this. I should remind everyone that thi
 {{< /notice >}}
 
 
-{{< notice tip >}}
-The following commands are tested on Ubuntu 20.04 only.
-{{< /notice >}}
 
 {{< notice warning >}}
 This is a warning notice. Be warned!

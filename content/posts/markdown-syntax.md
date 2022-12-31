@@ -10,7 +10,7 @@ tags:
 ShowToc: true
 categories: ["AWS"]
 cover:
-    image: /img/0004.jpg
+    image: /img/0004.webp
     caption: " thsit" # display caption under cover
     relative: true # when using page bundles set this to true
 ---

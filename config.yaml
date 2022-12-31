@@ -33,7 +33,7 @@ params:
   images:
     - /img/social.jpg # This is the root pic when sharing on social media
   homeInfoParams:
-    Title: "Hi there \U0001F44B\U0001F3FB"
+    Title: "Hi there \U0001F44B"
     Content: "A simple Blog where i talk about my learning journey, documenting and sharing what I am learning, as well as reflecting on my own growth and progress."
   socialIcons:
     - name: github

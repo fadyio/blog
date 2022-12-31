@@ -11,6 +11,7 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 pygmentsCodefencesGuessSyntax: true
+googleAnalytics: "G-1ZN2JNL2H3"
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors:
@@ -87,10 +88,6 @@ params:
     minMatchCharLength: 2
     keys: ["title", "content"]
   privacy:
-    disqus:
-      disable: true
-    googleAnalytics:
-      disable: true
     instagram:
       disable: false
       simple: true

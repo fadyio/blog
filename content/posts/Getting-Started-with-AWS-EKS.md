@@ -1,6 +1,6 @@
 ---
-title: "Getting Started with Amazon EKS"
-date: "2022-03-11"
+title: "Getting Started with Amazon EKS by deploy a sample application"
+date: "2022-10-11"
 tags: ["AWS", "EKS"]
 author: "Fady"
 showToc: true

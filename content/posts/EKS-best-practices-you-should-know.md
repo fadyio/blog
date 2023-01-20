@@ -47,5 +47,5 @@ It's important to note that when using Pod Topology Constraints, it's important 
 
 [For more](https://aws.github.io/aws-eks-best-practices/reliability/docs/dataplane/#spread-worker-nodes-and-workload-across-multiple-azs)
 
-
+## Summing it up
 In my view, implementing governance policies is only the first step towards ensuring reliability, security, and stability for your Kubernetes cluster. I found it interesting to discover that using centralized policy management could also be a powerful way to overcome the often-challenging relationship between development and operations teams.

@@ -12,7 +12,7 @@ enableEmoji: true
 pygmentsUseClasses: true
 pygmentsCodefencesGuessSyntax: true
 googleAnalytics: "G-1ZN2JNL2H3"
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# prevent build failures when using Instagram shortcode due.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors:
   - error-remote-getjson

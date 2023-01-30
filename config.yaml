@@ -22,6 +22,7 @@ minify:
 ##################################################################
 params:
   env: production
+  images: [social.png] # This is the root pic when sharing on social media
   assets:
     disableHLJS: true
     disableFingerprinting: false
@@ -30,7 +31,6 @@ params:
     favicon32x32: /favicon/favicon-32x32.png
     apple_touch_icon: /favicon/apple-touch-icon.png
     safari_pinned_tab: /favicon/mstile-144x144.png
-  images: /img/social.png # This is the root pic when sharing on social media
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: "A simple Blog where i talk about my learning journey, documenting and sharing what I am learning, as well as reflecting on my own growth and progress."
@@ -71,11 +71,6 @@ params:
   TocOpen: false
   disableScrollToTop: true
   ShowRssButtonInSectionTermList: false
-  cover:
-    hiddenInList: false # hide on list pages and home
-    hiddenInSingle: false # hide on single page
-    responsiveImages: true
-    linkFullImages: true
   schema:
     publisherType: Website
   fuseOpts:

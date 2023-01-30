@@ -22,7 +22,7 @@ minify:
 ##################################################################
 params:
   env: production
-  images: [social.png] # This is the root pic when sharing on social media
+  images: ["social.png"] # This is the root pic when sharing on social media
   assets:
     disableHLJS: true
     disableFingerprinting: false

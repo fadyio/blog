@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/Fadyio/Fadyio.com/blob/master/static/img/logo.svg" height="400"/>
+  <img alt="Logo" src="https://github.com/Fadyio/Fadyio.com/blob/main/static/img/logo.svg" height="400"/>
 </div>
 <div align="center">
 

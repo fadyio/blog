@@ -22,7 +22,6 @@ minify:
 ##################################################################
 params:
   env: production
-  images: ["Fadyio.png"] # This is the root pic when sharing on social media
   assets:
     disableHLJS: true
     disableFingerprinting: false
@@ -60,7 +59,6 @@ params:
     iconHeight: 35
   defaultTheme: auto
   ShowBreadCrumbs: true
-  disableThemeToggle: false
   ShowPostNavLinks: true
   DateFormat: "2006-01-02"
   ShowShareButtons: true
@@ -68,7 +66,6 @@ params:
   ShowReadingTime: true
   ShowWordCount: true
   ShowCodeCopyButtons: true
-  TocOpen: false
   disableScrollToTop: true
   ShowRssButtonInSectionTermList: false
   schema:

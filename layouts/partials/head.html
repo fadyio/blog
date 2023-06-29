@@ -7,9 +7,6 @@
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
-{{ partial "social_metadata.html" . }}
-
-
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
 

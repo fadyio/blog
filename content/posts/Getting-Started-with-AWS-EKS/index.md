@@ -7,7 +7,7 @@ showToc: true
 TocOpen: false
 description: "Setup Kubernetes cluster and deploy a sample application in AWS EKS."
 cover:
-    image: /img/Getting-Started-with-Amazon-EKS/EKS-container.jpg
+    image: /img/EKS-container.jpg
     alt: "Container"
     caption: Photo by [frank mckenna](https://unsplash.com/@frankiefoto) on [Unsplash](https://unsplash.com)
     relative: true

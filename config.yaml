@@ -14,13 +14,11 @@ buildDrafts: false
 # whether or not to include content with future publish dates during the site building process.
 buildFuture: false
 enableEmoji: true
-images: /Fadyio.png
 # enable Pygments syntax highlighter
 pygmentsUseClasses: true
 # automatic syntax guessing feature for code fences
 pygmentsCodefencesGuessSyntax: true
 googleAnalytics: "G-1ZN2JNL2H3"
-env: production
 # prevent build failures when using Instagram shortcode due.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors:
@@ -30,6 +28,8 @@ minify:
   minifyOutput: true
 ##################################################################
 params:
+  env: production
+  images: /Fadyio.png
   profileMode:
     enabled: true # needs to be explicitly set
     imageUrl: /logo-big.png

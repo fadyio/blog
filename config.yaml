@@ -1,17 +1,26 @@
 baseURL: "https://Fadyio.com"
 languageCode: en-us
+# list of the theme
 theme: ["hugo-notice"]
+# specifies the number of items to display per page when paginating content on your website.
 paginate: 5
+# title of the website
 title: "Fady Nagh"
-copyright: "© 2022  Fady Nagh"
+copyright: "© 2023 Fady Nagh"
+# enables the generation of a "robots.txt" file
 enableRobotsTXT: true
+# whether or not to include draft content during the site building process
 buildDrafts: false
+# whether or not to include content with future publish dates during the site building process.
 buildFuture: false
-buildExpired: false
 enableEmoji: true
+images: /Fadyio.png
+# enable Pygments syntax highlighter
 pygmentsUseClasses: true
+# automatic syntax guessing feature for code fences
 pygmentsCodefencesGuessSyntax: true
 googleAnalytics: "G-1ZN2JNL2H3"
+env: production
 # prevent build failures when using Instagram shortcode due.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors:
@@ -21,7 +30,15 @@ minify:
   minifyOutput: true
 ##################################################################
 params:
-  env: production
+  profileMode:
+    enabled: true # needs to be explicitly set
+    imageUrl: /logo-big.png
+    imageTitle: "Fady I/O"
+    title: " "
+    subtitle: "Hi! I’m Fady. I’m a DevOps engineer and AWS Community Builder with deep expertise in YAML indentation. I thrive in chaos and chaos loves me."
+    buttons:
+      - name: CV
+        url: "https://github.com/"
   assets:
     disableHLJS: true
     disableFingerprinting: false
@@ -30,13 +47,13 @@ params:
     favicon32x32: /favicon/favicon-32x32.png
     apple_touch_icon: /favicon/apple-touch-icon.png
     safari_pinned_tab: /favicon/mstile-144x144.png
-  homeInfoParams:
-    Title: "Hi there 👋"
-    Content: "A simple Blog where i talk about my learning journey, documenting and
-      sharing what I am learning, as well as reflecting on my own growth and progress."
   socialIcons:
+    - name: mastodon
+      url: https://sigmoid.social/@Fady
     - name: github
       url: https://github.com/Fadyio
+    - name: dev
+      url: https://dev.to/fadyio
     - name: linkedin
       url: https://www.linkedin.com/in/Fadyio
     - name: stackoverflow
@@ -46,31 +63,29 @@ params:
     - name: rss
       url: https://Fadyio.com/index.xml
   author: "Fady"
-  description: "A collection of walkthroughs, rants, and hacks on emerging cloud technologies
-    and DevOps methodology and tools."
+  description: "Join me on a journey through the world of DevOps! From the basics of cloud technologies to the complexities of Kubernetes, I share practical advice and best practices on all things automation. From Terraform, AWS, Kubernetes, Docker, GoLang."
   comments: true
   mainSections:
     - post
     - posts
-  keywords: [DevOps, Fady, Fady Nagh, Cloud, Linux, tech, Blog, Golan, AWS, docker,
-    kubernetes, Ansible]
+  keywords: [DevOps, DevOps practices, Fady, Fady Nagh, Infrastructure as Code, Automation tools, Azure, Continuous delivery, Continuous integration, Cloud, Monitoring and observability, Cloud-native applications, Linux, tech, Blog, Golan, AWS, docker, kubernetes, Ansible, Python, Scalability, Terraform]
   label:
     text: Fadyio.com # sets the top left blue "home" link text
     icon: /img/logo.png
     iconHeight: 35
   defaultTheme: auto
-  ShowBreadCrumbs: true
-  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowPostNavLinks: false
   DateFormat: "2006-01-02"
   ShowShareButtons: true
-  disableAnchoredHeadings: true
+  disableAnchoredHeadings: false
   ShowReadingTime: true
   ShowWordCount: true
   ShowCodeCopyButtons: true
   disableScrollToTop: true
-  ShowRssButtonInSectionTermList: false
+  ShowRssButtonInSectionTermList: true
   schema:
-    publisherType: Website
+    publisherType: website
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -81,7 +96,7 @@ params:
     keys: ["title", "content"]
   privacy:
     instagram:
-      disable: false
+      disable: true
       simple: true
     twitter:
       disable: false
@@ -105,29 +120,16 @@ menu:
     - name: Blog
       url: /posts/
       weight: 10
-    - identifier: categories
-      name: Series
-      url: /categories/
-      weight: 20
-    - name: Projects
-      url: projects
-      weight: 30
+    - name: PGP Key
+      url: /pgp-key.txt
+      weight: 40
     - name: About
       url: /about
-      weight: 40
-    - identifier: search
-      post: <svg width="23" height="23" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path
-        fill-rule="evenodd" clip-rule="evenodd" d="M18.319 14.4326C20.7628 11.2941
-        20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895
-        6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075
-        15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829
-        20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066
-        18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426
-        5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005
-        16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005
-        2.93936 13.8995 2.93936 16.2426 5.28251Z" fill="currentColor" /></svg>
-      url: /search
       weight: 50
+    - identifier: search
+      post: <svg width="23" height="23" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z" fill="currentColor" /></svg>
+      url: /search
+      weight: 60
 outputs:
   home:
     - HTML

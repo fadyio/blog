@@ -15,10 +15,9 @@ Welcome to My home on the internet, My name is Fady Nagh.
 I am a DevOps Engineer with a strong background in system administration. I have a passion for automating processes and improving the efficiency of software delivery.
 I have experience working with a variety of technologies, including AWS, Jenkins, Ansible, Docker, Kubernetes, Terraform, CircleCI, Prometheus and Finally go and python.
 
-In my free time, I enjoy staying up to date on the latest trends and technologies in the industry and solving coding challenges and I also love using my technical skills to build cool & interesting things.
-I am also an avid runner and enjoy spending time outdoors.
+In my free time, I enjoy staying up to date on the latest trends and technologies in the industry
 
-Cheers 😊
+Cheers
 Fady
 
 ---

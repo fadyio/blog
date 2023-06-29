@@ -1,7 +1,7 @@
 baseURL: "https://Fadyio.com"
 languageCode: en-us
 # list of the theme
-theme: ["hugo-notice"]
+theme: [ "hugo-notice" ]
 # specifies the number of items to display per page when paginating content on your website.
 paginate: 5
 # title of the website
@@ -29,7 +29,7 @@ minify:
 ##################################################################
 params:
   env: production
-  images: /Fadyio.png
+  socialImage: /Fadyio.png
   profileMode:
     enabled: true # needs to be explicitly set
     imageUrl: /logo-big.png
@@ -68,7 +68,32 @@ params:
   mainSections:
     - post
     - posts
-  keywords: [DevOps, DevOps practices, Fady, Fady Nagh, Infrastructure as Code, Automation tools, Azure, Continuous delivery, Continuous integration, Cloud, Monitoring and observability, Cloud-native applications, Linux, tech, Blog, Golan, AWS, docker, kubernetes, Ansible, Python, Scalability, Terraform]
+  keywords:
+    [
+      DevOps,
+      DevOps practices,
+      Fady,
+      Fady Nagh,
+      Infrastructure as Code,
+      Automation tools,
+      Azure,
+      Continuous delivery,
+      Continuous integration,
+      Cloud,
+      Monitoring and observability,
+      Cloud-native applications,
+      Linux,
+      tech,
+      Blog,
+      Golan,
+      AWS,
+      docker,
+      kubernetes,
+      Ansible,
+      Python,
+      Scalability,
+      Terraform
+    ]
   label:
     text: Fadyio.com # sets the top left blue "home" link text
     icon: /img/logo.png
@@ -93,7 +118,7 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 2
-    keys: ["title", "content"]
+    keys: [ "title", "content" ]
   privacy:
     instagram:
       disable: true

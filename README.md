@@ -9,11 +9,16 @@
 
 </div>
 
+<div align="center">
+
 # My Personal Website Hosted on AWS amplify
+
+</div>
 
 ![Screenshot](./screenshots/Fadyio.jpg)
 
-Below are some neat features:
+
+#### Below are some neat features:
 
 ![Screenshot](./screenshots/Test.png)
 

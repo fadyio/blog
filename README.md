@@ -3,18 +3,19 @@
 </div>
 <div align="center">
 
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Hugo](https://img.shields.io/badge/Hugo-FF4088?style=for-the-badge&logo=hugo&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
 </div>
 
-# Fady's Blogs
+# My Personal Website Hosted on AWS amplify
 
-> A simple Blog where i talk about my learning journey, documenting and sharing what I am learning, as well as reflecting on my own growth and progress.
-I love to receive feedback and support from a community of like-minded learners.
+![Screenshot](./screenshots/Fadyio.jpg)
 
 Below are some neat features:
+
+![Screenshot](./screenshots/Test.png)
 
 - Powered by Hugo
 - Uses a heavily modded version of [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
@@ -35,7 +36,7 @@ Below are some neat features:
 
 ## License
 
-Copyright 2022 Fady Nagh
+Copyright 2023 Fady Nagh
 
 Licensed under MIT License : https://opensource.org/licenses/MIT
 

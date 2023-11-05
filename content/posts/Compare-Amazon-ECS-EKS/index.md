@@ -7,7 +7,7 @@ showToc: true
 TocOpen: false
 description: "Compare Amazon ECS vs. EKS"
 cover:
-    image: /img/Compare-Amazon-ECS-EKS.png
+    image: /img/Compare-Amazon-ECS-EKS.webp
     alt: EKS VS ECS
     relative: true
 ---

@@ -7,7 +7,7 @@ showToc: true
 TocOpen: false
 description: "EKS Benefits and comparison between EKS vs. self-managed Kubernetes"
 cover:
-    image: /img/EKS-Benefits.png
+    image: /img/EKS-Benefits.webp
     alt: EKS Benefits
     relative: true
 ---

@@ -7,7 +7,7 @@ showToc: true
 TocOpen: false
 description: "Setup Kubernetes cluster and deploy a sample application in AWS EKS."
 cover:
-    image: /img/EKS-container.jpg
+    image: /img/EKS-container.webp
     alt: "Container"
     caption: Photo by [frank mckenna](https://unsplash.com/@frankiefoto) on [Unsplash](https://unsplash.com)
     relative: true
@@ -37,15 +37,15 @@ Our first step is to set up a new IAM role with EKS permissions.
 To do this, follow these steps:
 
 Open the [IAM console](https://console.aws.amazon.com/iam/), Select the Roles section on the left side of the page, then click the Create Role button at the top of the page.
-![](images/screen1.png)
+![](images/screen1.webp)
 From the list of AWS services, select EKS and then Next: Permissions at the bottom of the page.
-![](images/screen2.png)
+![](images/screen2.webp)
 Select policies as in the image, and proceed to the Review page.
-![](images/screen3.png)
+![](images/screen3.webp)
 Enter a name for the role and hit the Create role button at the bottom of the page to create the IAM role.
-![](images/screen4.png)
+![](images/screen4.webp)
 The IAM role is created.
-![](images/screen5.png)
+![](images/screen5.webp)
 {{< notice note >}}
 Be sure to record the Role ARN, as you'll need it later when creating your Kubernetes cluster.
 {{< /notice >}}
@@ -57,18 +57,18 @@ Amazon EKS now also offers [service account IAM roles](https://docs.aws.amazon.c
 Now, we’re going to create a separate VPC that protects the communication between worker nodes and the AWS Kubernetes API server for our EKS cluster. To do this, we’re going to use a CloudFormation template that contains all the necessary EKS-specific ingredients for setting up the VPC.
 
 Open up [CloudFormation](https://console.aws.amazon.com/cloudformation) and click the Create new stack button.
-![](images/screen6.png)
+![](images/screen6.webp)
 On the Select template page, enter the URL of the CloudFormation YAML in the relevant section:
 ```
 https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2019-01-09/amazon-eks-vpc-sample.yaml
 ```
-![](images/screen7.png)
+![](images/screen7.webp)
 Click Next and choose the name of the stack,leave the default network configurations as is, and click Next.
-![](images/screen8.png)
+![](images/screen8.webp)
 Leave the default options untouched and then click Next and Next.
-![](images/screen9.png)
+![](images/screen9.webp)
 Now The CloudFormation will begin to create the VPC. Once done, be sure to note the various values created Security Groups, Vpc ID and Sub-nets ID. You will need these in subsequent steps. You can see these under the Outputs tab of the CloudFormation stack.
-![](images/screen10.png)
+![](images/screen10.webp)
 
 Step 3: Creating the EKS cluster
 we will use the AWS CLI to create the Kubernetes cluster. To do this, use the following command:
@@ -138,7 +138,7 @@ The output displayed will be:
 $ "CREATING"
 ```
 Or you can open the Clusters page.
-![](images/screen11.png)
+![](images/screen11.webp)
 
 Once the status changes to “ACTIVE”, we can proceed with updating our kubeconfig file with the information on the new cluster so kubectl can communicate with it.
 I will use the AWS CLI update-kubeconfig command to do that.
@@ -153,9 +153,9 @@ Now you can test the configurations using the kubectl get svc command.
 ```
 kubectl get svc
 ```
-![](images/screen12.png)
+![](images/screen12.webp)
 Click the cluster in the EKS Console to review configurations:
-![](images/screen13.png)
+![](images/screen13.webp)
 ## Step 4: Launching Kubernetes worker nodes
 Now that we’ve set up our cluster and VPC networking, we can now launch Kubernetes worker nodes.
 We will again use a CloudFormation template.
@@ -163,7 +163,7 @@ Again open CloudFormation, click Create Stack, and this time use the following t
 ```
 https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2019-01-09/amazon-eks-nodegroup.yaml
 ```
-![](images/screen14.png)
+![](images/screen14.webp)
 Click next, name your cloudformation stack, and in the eks cluster section enter the following
 >- ClusterName – the name of your Kubernetes cluster (e.g. MyEKSCluster)
 >- ClusterControlPlaneSecurityGroup – the same security group you used for creating the cluster in previous step.
@@ -178,12 +178,12 @@ Click next, name your cloudformation stack, and in the eks cluster section enter
 >- VpcId – enter the ID of the VPC you created in Step 2 above.
 >- Subnets – select the three subnets you created in Step 2 above.
 
-![](images/screen15.png)
+![](images/screen15.webp)
 Click Next and check-box at the bottom of the page acknowledging that the stack might create IAM resourcesa
 CloudFormation will  create the worker nodes with the VPC settings we entered and three new EC2 instances will be created
-![](images/screen16.png)
+![](images/screen16.webp)
 As before, once the stack is created, open Outputs tab:
-![](images/screen17.png)
+![](images/screen17.webp)
 Now download the AWS authenticator configuration map:
 ```
 curl -O https://amazon-eks.s3-us-west-2.amazonaws.com/cloudformation/2019-01-09/aws-auth-cm.yaml
@@ -227,6 +227,6 @@ kubernetes     ClusterIP      10.100.0.1      <none>                          44
 redis-master   ClusterIP      10.100.241.18   <none>                          6379/TCP         2m7s
 ```
 Open your browser and point to the guestbook’s external IP at port 3000 and you should see:
-![](images/screen18.png)
+![](images/screen18.webp)
 ## Summing it up
 If you are AWS power users, Amazon EKS is a natural fit. For those of you who are just starting in the cloud, Amazon EKS might seem a bit daunting to begin with.

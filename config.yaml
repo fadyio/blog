@@ -31,7 +31,7 @@ params:
   env: production
   profileMode:
     enabled: true # needs to be explicitly set
-    imageUrl: /logo-big.png
+    imageUrl: /logo-big.webp
     imageTitle: "Fady I/O"
     title: " "
     subtitle: "Hi! I’m Fady. I’m a DevOps engineer and AWS Community Builder with deep expertise in YAML indentation. I thrive in chaos and chaos loves me."
@@ -42,10 +42,10 @@ params:
     disableHLJS: true
     disableFingerprinting: false
     favicon: /favicon/favicon.ico
-    favicon16x16: /favicon/favicon-16x16.png
-    favicon32x32: /favicon/favicon-32x32.png
-    apple_touch_icon: /favicon/apple-touch-icon.png
-    safari_pinned_tab: /favicon/mstile-144x144.png
+    favicon16x16: /favicon/favicon-16x16.webp
+    favicon32x32: /favicon/favicon-32x32.webp
+    apple_touch_icon: /favicon/apple-touch-icon.webp
+    safari_pinned_tab: /favicon/mstile-144x144.webp
   socialIcons:
     - name: mastodon
       url: https://sigmoid.social/@Fady
@@ -70,7 +70,7 @@ params:
   keywords: [DevOps, DevOps practices, Fady, Fady Nagh, Infrastructure as Code, Automation tools, Azure, Continuous delivery, Continuous integration, Cloud, Monitoring and observability, Cloud-native applications, Linux, tech, Blog, Golan, AWS, docker, kubernetes, Ansible, Python, Scalability, Terraform]
   label:
     text: Fadyio.com # sets the top left blue "home" link text
-    icon: /img/logo.png
+    icon: /img/logo.webp
     iconHeight: 35
   defaultTheme: auto
   ShowBreadCrumbs: false

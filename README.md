@@ -21,7 +21,7 @@
 ### Below are some neat features:
 
 
-![Screenshot](./screenshots/Test.png)
+![Screenshot](./screenshots/Test.webp)
 
 - Powered by Hugo
 - Uses a heavily modded version of [PaperMod](https://github.com/adityatelange/hugo-PaperMod)

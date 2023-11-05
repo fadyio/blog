@@ -7,7 +7,7 @@ showToc: true
 TocOpen: false
 description: "To get the most out of EKS, it's important to be aware of some best practices."
 cover:
-    image: /img/EKS-best-practices-you-should-know.png
+    image: /img/EKS-best-practices-you-should-know.webp
     alt: Best practices in EKS
     relative: true
 ---

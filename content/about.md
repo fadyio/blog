@@ -13,20 +13,27 @@ disableShare: true
 ---
 ### Welcome to My home on the internet.
 
-My name is Fady, I am a DevOps Engineer with a strong background in system administration. I have a passion for automating processes and improving the efficiency of software delivery.
-I have experience working with a variety of technologies, including AWS, Azure, Docker, Kubernetes, Terraform, CircleCI, Prometheus.
 
-In my spare time, I do pretty much the same things I do at work, plus I like to exercise free-body, run, read, listen to music.
+Hey there! I'm Fady, I am a DevOps, SRE and Cloud Engineer with a strong background in system administration and infrastructure tooling. 
 
-Please feel free to leave a comment or send me a message: in the vast virtual world, we are all connected by a simple click.
+My expertise primarily revolves around Go, Python, Linux, Kubernetes, serverless architectures and the Cloud Native domain in general. I've always had a keen interest in system-level programming, and networking. At the moment, I am learning more about AI.
+
+ I'm an active contributor to open source and believe in the importance of knowledge sharing, as evidenced by the [blog](/posts) that I run, which I occasionally post technical articles.
+ 
+ Additionally, I hold the title of AWS Community Builder.
+
+
+In my spare time, I do pretty much the same things I do at work, plus I like to exercise, cycling, buy more books than I read, play video games, listen to music.
+
+My GPG key is published [Here](/pgp-key.txt), if you need a way to send me something securely.
 
 ---
 ## Skills
 
-- **Programming Languages:** Go, Python, Bash, C++.
-- **DevOps:** Docker, Kubernetes, Terraform, Helm ,Git.
+- **Programming Languages:** Go, Python, Bash. 
+- **DevOps:** Docker, Kubernetes, Terraform, Helm ,Git, ElasticSearch, Prometheus, ArgoCD, Jenkins, Github CI/CD.
 - **Database:** PostgreSQL, SQL, sqlite.
-- **cloud provider:** AWS, Azure.
+- **Cloud Provider:** AWS, Azure.
 
 ---
 ## 🔗 Contact

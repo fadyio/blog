@@ -15,7 +15,7 @@
 
 </div>
 
-![Screenshot](./screenshots/Fadyio.jpg)
+![Screenshot](./screenshots/Fadyio.webp)
 
 
 ### Below are some neat features:

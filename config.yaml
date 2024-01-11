@@ -45,6 +45,8 @@ params:
   socialIcons:
   - name: mastodon
     url: https://sigmoid.social/@Fady
+  - name: aws
+    url: https://community.aws/@fady
   - name: github
     url: https://github.com/Fadyio
   - name: dev

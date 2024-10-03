@@ -13,12 +13,12 @@ export type Link = {
 }
 
 export const SITE: Site = {
-  TITLE: 'Fady Nagh',
+  TITLE: "Fady Nagh's Blog",
   DESCRIPTION:
-    'Explore DevOps land with me, Insights on cloud, Kubernetes, and automation. Learn AWS, Docker, Terraform & GoLang best practices.',
+    'Dive into DevOps with Fady Nagh, Discover in-depth insights on AWS, Kubernetes, automation, and cloud-native technologies with practical guides.',
   EMAIL: 'Fady@Fadyio.com',
   NUM_POSTS_ON_HOMEPAGE: 3,
-  POSTS_PER_PAGE: 5,
+  POSTS_PER_PAGE: 8,
   SITEURL: 'https://fadyio.com',
 }
 
@@ -29,8 +29,9 @@ export const NAV_LINKS: Link[] = [
 ]
 
 export const SOCIAL_LINKS: Link[] = [
-  { href: 'https://github.com/fadyio', label: 'GitHub' },
-  { href: 'fady@fadyio.com', label: 'Email' },
-  { href: 'http://linkedin.com/in/fadyio', label: 'LinkedIn' },
+  { href: 'https://github.com/Fadyio', label: 'GitHub' },
+  {
+    href: 'Fady@Fadyio.com', label: 'Email' },
+  { href: 'http://linkedin.com/in/Fadyio', label: 'LinkedIn' },
   { href: '/rss.xml', label: 'RSS' },
 ]

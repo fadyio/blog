@@ -21,6 +21,16 @@ import icon from 'astro-icon'
 export default defineConfig({
   site: 'https://fadyio.com',
   integrations: [
+    matomo({
+      enabled: true,
+      host: "https://ana.012017.xyz/",
+      trackerUrl: "js/", // defaults to matomo.php
+      srcUrl: "js/", // defaults to matomo.js
+      siteId: 2,
+      heartBeatTimer: 5,
+      disableCookies: true,
+      debug: false,
+    }),
     tailwind({
       applyBaseStyles: false,
     }),

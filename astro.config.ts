@@ -15,17 +15,18 @@ import remarkEmoji from 'remark-emoji'
 import rehypeCallouts from 'rehype-callouts'
 import remarkMath from 'remark-math'
 import sectionize from '@hbsnow/rehype-sectionize'
+import matomo from 'astro-matomo'
 
 import icon from 'astro-icon'
 
 export default defineConfig({
   site: 'https://fadyio.com',
   integrations: [
-    matomo({
+   matomo({
       enabled: true,
       host: "https://ana.012017.xyz/",
-      trackerUrl: "js/", // defaults to matomo.php
-      srcUrl: "js/", // defaults to matomo.js
+      trackerUrl: "js/",
+      srcUrl: "js/",
       siteId: 2,
       heartBeatTimer: 5,
       disableCookies: true,

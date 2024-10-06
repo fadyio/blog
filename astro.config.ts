@@ -27,7 +27,7 @@ export default defineConfig({
       host: "https://ana.012017.xyz/",
       trackerUrl: "js/",
       srcUrl: "js/",
-      siteId: 2,
+      siteId: 1,
       heartBeatTimer: 5,
       disableCookies: true,
       debug: false,

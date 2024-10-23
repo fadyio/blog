@@ -24,7 +24,7 @@ export const SITE: Site = {
 
 export const NAV_LINKS: Link[] = [
   { href: '/blog', label: 'blog' },
-  { href: '/pgp-key.txt', label: 'PGP Key'},
+  { href: '/gpg-key.txt', label: 'PGP Key'},
   { href: '/about', label: 'about' },
 ]
 

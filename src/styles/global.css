@@ -41,15 +41,15 @@
     --ring: 0 0% 3.9%;
   }
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
+    --background: 240deg, 21%, 12%;
+    --foreground: 226deg, 64%, 88%;
+    --primary: 41deg, 86%, 83%;
+    --primary-foreground: 41deg, 86%, 83%;
+    --secondary: 237deg, 16%, 23%;
+    --secondary-foreground: 226deg, 64%, 88%;
+    --muted: 226deg, 64%, 88%;
+    --muted-foreground: 226deg, 64%, 88%;
+    --accent: 226deg, 64%, 88%;
     --accent-foreground: 0 0% 98%;
     --additive: 112 50% 36%;
     --additive-foreground: 0 0% 9%;
